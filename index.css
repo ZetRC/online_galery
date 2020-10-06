@@ -205,13 +205,13 @@ img {
 
   .newGaleryOne {
     float: left;
-    width: 47%;
+    width: 45%;
     margin-left: 1%;
   }
 
   .newGaleryTwo {
     float: right;
-    width: 47%;
+    width: 48%;
     margin-right: 2em;
   }
 
@@ -311,4 +311,30 @@ img {
 
 .imagesIcon:hover {
   color: white;
+}
+
+@media (max-width: 800px) {
+  .imagesText {
+    width: 100%;
+    float: none;
+  }
+
+  .imagesContent img {
+    width: 100%;
+    float: none;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .aboutContentText {
+    width: 100%;
+    float: none;
+  }
+
+  .aboutContainer img {
+    width: 100%;
+    height: 35%;
+    float: none;
+  }
 }

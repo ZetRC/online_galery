@@ -117,7 +117,11 @@ outIcon.addEventListener("click", function () {
   aboutContainer.style.display = "none";
 });
 
-(about, aboutMobile).addEventListener("click", function () {
+aboutMobile.addEventListener("click", function () {
+  aboutContainer.style.display = "block";
+});
+
+about.addEventListener("click", function () {
   aboutContainer.style.display = "block";
 });
 
@@ -126,19 +130,24 @@ let photosMobile = document.querySelector(".photosMobile");
 let imagesIcon = document.querySelector(".imagesIcon");
 let imagesContainer = document.querySelector(".imagesContainer");
 
-(photos, photosMobile).addEventListener("click", function () {
+photosMobile.addEventListener("click", function () {
   imagesContainer.style.display = "block";
   console.log("hello");
+});
+photos.addEventListener("click", function () {
+  imagesContainer.style.display = "block";
 });
 
 imagesIcon.addEventListener("click", function () {
   imagesContainer.style.display = "none";
-  console.log("hello");
 });
 
 let home = document.querySelector(".home");
 let homeMobile = document.querySelector(".homeMobile");
 
-(home, homeMobile).addEventListener("click", function () {
+homeMobile.addEventListener("click", function () {
+  location.reload();
+});
+home.addEventListener("click", function () {
   location.reload();
 });

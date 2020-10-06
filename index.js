@@ -110,12 +110,35 @@ function getScrollPercent() {
 
 let about = document.querySelector(".about");
 let aboutContainer = document.querySelector(".aboutContainer");
+let aboutMobile = document.querySelector(".aboutMobile");
 let outIcon = document.querySelector(".outIcon");
 
 outIcon.addEventListener("click", function () {
   aboutContainer.style.display = "none";
 });
 
-about.addEventListener("click", function () {
+(about, aboutMobile).addEventListener("click", function () {
   aboutContainer.style.display = "block";
+});
+
+let photos = document.querySelector(".photos");
+let photosMobile = document.querySelector(".photosMobile");
+let imagesIcon = document.querySelector(".imagesIcon");
+let imagesContainer = document.querySelector(".imagesContainer");
+
+(photos, photosMobile).addEventListener("click", function () {
+  imagesContainer.style.display = "block";
+  console.log("hello");
+});
+
+imagesIcon.addEventListener("click", function () {
+  imagesContainer.style.display = "none";
+  console.log("hello");
+});
+
+let home = document.querySelector(".home");
+let homeMobile = document.querySelector(".homeMobile");
+
+(home, homeMobile).addEventListener("click", function () {
+  location.reload();
 });

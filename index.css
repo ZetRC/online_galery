@@ -182,11 +182,12 @@ img {
     text-align: center;
     position: relative;
     top: 10vh;
+    color: white;
   }
 
   .listMobile li:hover {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
   }
 
   .list {
@@ -272,12 +273,13 @@ img {
   color: white;
 }
 
-/* .imagesContainer {
+.imagesContainer {
   background: rgb(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: +2;
+  display: none;
 }
 
 .imagesContent {
@@ -287,4 +289,26 @@ img {
   margin: 0 auto;
   position: relative;
   top: 10vh;
-} */
+}
+
+.imagesContent img {
+  float: left;
+  width: 40%;
+}
+
+.imagesText {
+  float: right;
+  width: 55%;
+  padding: 3vh;
+}
+
+.imagesIcon {
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  font-size: 1.5em;
+}
+
+.imagesIcon:hover {
+  color: white;
+}

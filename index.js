@@ -44,7 +44,7 @@ console.log(photosArrayThree);
 console.log(photosArrayFour);
 
 let iterationNumber = 0;
-let imageNumber = 15;
+let imageNumber = 30;
 while (iterationNumber <= imageNumber) {
   getRandomImage(iterationNumber);
   iterationNumber++;
@@ -80,7 +80,7 @@ function getScrollPercent() {
   return percent;
 }
 
-/* setTimeout(() => {
+setTimeout(() => {
   setInterval(() => {
     getScrollPercent();
 
@@ -94,19 +94,19 @@ function getScrollPercent() {
       }
     }
   }, 1000);
-}, 2000); */
+}, 2000);
 
-/* function getScrollPercent() {
+function getScrollPercent() {
   var h = document.documentElement,
     b = document.body,
     st = "scrollTop",
     sh = "scrollHeight";
   return ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-} */
+}
 
-/* setInterval(() => {
+setInterval(() => {
   console.log(getScrollPercent());
-}, 500); */
+}, 500);
 
 let about = document.querySelector(".about");
 let aboutContainer = document.querySelector(".aboutContainer");

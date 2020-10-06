@@ -44,7 +44,7 @@ console.log(photosArrayThree);
 console.log(photosArrayFour);
 
 let iterationNumber = 0;
-let imageNumber = 50;
+let imageNumber = 15;
 while (iterationNumber <= imageNumber) {
   getRandomImage(iterationNumber);
   iterationNumber++;
@@ -107,3 +107,15 @@ function getScrollPercent() {
 /* setInterval(() => {
   console.log(getScrollPercent());
 }, 500); */
+
+let about = document.querySelector(".about");
+let aboutContainer = document.querySelector(".aboutContainer");
+let outIcon = document.querySelector(".outIcon");
+
+outIcon.addEventListener("click", function () {
+  aboutContainer.style.display = "none";
+});
+
+about.addEventListener("click", function () {
+  aboutContainer.style.display = "block";
+});

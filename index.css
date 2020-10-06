@@ -5,7 +5,7 @@
 }
 
 body {
-  background: black;
+  background: white;
   color: white;
 }
 img {
@@ -16,29 +16,41 @@ img {
 
 .galery,
 .galeryTwo,
-.galeryThree {
+.galeryThree,
+.galeryFour {
   float: left;
   width: 30%;
   margin: 1%;
 }
+.galery {
+  width: 30%;
+  position: relative;
+}
+
 .galeryTwo {
   float: left;
   width: 30%;
-  margin: 1em;
+  margin: 1em 1em 1em 2%;
   position: relative;
   right: -1em;
 }
 .galeryThree {
   float: right;
   width: 30%;
-  margin: 1em;
+  margin: 1em 2em 1em 2%;
   position: relative;
-  left: -1em;
+}
+.galeryFour {
+  float: right;
+  width: 30%;
+  margin: 0 2em 1em 2%;
+  position: relative;
 }
 
 .galery img,
 .galeryTwo img,
-.galeryThree img {
+.galeryThree img,
+.galeryFour img {
   margin: 0.5em;
 }
 
@@ -96,7 +108,7 @@ img {
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .mobileNavbarButton {
     display: inline;
     font-size: 2.5em;
@@ -121,7 +133,8 @@ img {
 
   .galery,
   .galeryTwo,
-  .galeryThree {
+  .galeryThree,
+  .galeryFour {
     position: relative;
     top: 0;
     right: 0;
@@ -181,20 +194,41 @@ img {
   }
 }
 
-@media (max-width: 1600px) {
-  .galery {
-    float: right;
-    width: 46%;
-    position: relative;
-    left: -1em;
+@media (min-width: 600px) and (max-width: 1600px) {
+  .galeryOne,
+  .galeryTwo,
+  .galeryThree,
+  .galeryFour {
+    float: none;
   }
 
-  .galeryTwo {
+  .newGaleryOne {
     float: left;
-    width: 46%;
+    width: 47%;
+    margin-left: 1%;
+  }
+
+  .newGaleryTwo {
+    float: right;
+    width: 47%;
+    margin-right: 2em;
   }
 
   .galeryThree {
-    display: none;
+    position: relative;
+    margin-left: 2em;
+  }
+  .galeryFour {
+    position: relative;
+    left: 1em;
+  }
+
+  .galery,
+  .galeryTwo,
+  .galeryThree,
+  .galeryFour {
+    float: none;
+    width: auto;
+    margin: auto;
   }
 }

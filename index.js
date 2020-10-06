@@ -3,9 +3,11 @@ console.log("hello");
 let galery = document.querySelector(".galery");
 let galeryTwo = document.querySelector(".galeryTwo");
 let galeryThree = document.querySelector(".galeryThree");
+let galeryFour = document.querySelector(".galeryFour");
 let photosArray = [];
 let photosArrayTwo = [];
 let photosArrayThree = [];
+let photosArrayFour = [];
 let controlNumber = 0;
 
 let getRandomImage = function (imageID) {
@@ -16,13 +18,15 @@ let getRandomImage = function (imageID) {
     "?random=" +
     imageID +
     ' alt="img"></img>';
-  controlNumber++;
+  controlNumber += 0.5;
   if (controlNumber <= 1) {
     photosArray.push(imageSelector);
   } else if (controlNumber <= 2) {
     photosArrayTwo.push(imageSelector);
-  } else if (controlNumber <= 3) {
+  } else if (controlNumber === 2.5) {
     photosArrayThree.push(imageSelector);
+  } else if (controlNumber === 3) {
+    photosArrayFour.push(imageSelector);
   }
 
   if (controlNumber >= 3) {
@@ -31,10 +35,16 @@ let getRandomImage = function (imageID) {
   galery.innerHTML = photosArray.join("");
   galeryTwo.innerHTML = photosArrayTwo.join("");
   galeryThree.innerHTML = photosArrayThree.join("");
+  galeryFour.innerHTML = photosArrayFour.join("");
 };
 
+console.log(photosArray);
+console.log(photosArrayTwo);
+console.log(photosArrayThree);
+console.log(photosArrayFour);
+
 let iterationNumber = 0;
-let imageNumber = 10;
+let imageNumber = 50;
 while (iterationNumber <= imageNumber) {
   getRandomImage(iterationNumber);
   iterationNumber++;
@@ -70,7 +80,7 @@ function getScrollPercent() {
   return percent;
 }
 
-setTimeout(() => {
+/* setTimeout(() => {
   setInterval(() => {
     getScrollPercent();
 
@@ -84,7 +94,7 @@ setTimeout(() => {
       }
     }
   }, 1000);
-}, 2000);
+}, 2000); */
 
 /* function getScrollPercent() {
   var h = document.documentElement,

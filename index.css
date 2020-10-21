@@ -2,12 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
   /*   background: white;
   color: white; */
 }
+
+li {
+  cursor: pointer;
+}
+
 img {
   object-fit: cover;
   width: 100%;
@@ -246,7 +252,7 @@ img {
 .aboutContent {
   width: 70%;
   height: 80%;
-  background: lightblue;
+  background: rgb(209, 209, 209);
   margin: 0 auto;
   position: relative;
   top: 10vh;
@@ -285,7 +291,7 @@ img {
 .imagesContent {
   width: 70%;
   height: 80%;
-  background: lightblue;
+  background: rgb(212, 212, 212);
   margin: 0 auto;
   position: relative;
   top: 10vh;
@@ -337,4 +343,13 @@ img {
     height: 35%;
     float: none;
   }
+
+  .questionMarkMobile {
+    display: inline;
+    margin-right: 1vh;
+  }
+}
+
+.logoContainer {
+  font-style: fantasy;
 }

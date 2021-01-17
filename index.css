@@ -34,7 +34,6 @@ img {
 .galeryTwo {
   float: left;
   width: 30%;
-  margin: 1em 1em 1em 2%;
   position: relative;
   right: -1em;
 }
@@ -60,20 +59,21 @@ img {
 
 .navbar {
   width: 100%;
-  height: 12vh;
+  height: 60px;
   background: rgb(50, 50, 50);
   position: fixed;
 }
 
 .navbar ul {
-  position: fixed;
-  top: 7vh;
-  right: 1vh;
+  position: absolute;
+  top: 1.8rem;
+  right: 1rem;
+
 }
 
 .navbar ul li {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: arial;
 
@@ -87,9 +87,9 @@ img {
 
 .logo {
   position: fixed;
-  top: 3vh;
-  left: 3vh;
-  font-size: 2.5em;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: white;
 }
@@ -97,7 +97,7 @@ img {
 .galeryContainerTwo {
   width: 100%;
   position: absolute;
-  top: 12vh;
+  top: 60px;
 }
 
 .navbarContainer {
@@ -112,131 +112,6 @@ img {
   display: none;
 }
 
-@media (max-width: 600px) {
-  .mobileNavbarButton {
-    display: inline;
-    font-size: 2.5em;
-    display: block;
-    position: fixed;
-    top: 3vh;
-    right: 3vh;
-    color: white;
-    background: none;
-  }
-
-  .galeryContainer {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .galeryContainer span {
-    float: none;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .galery,
-  .galeryTwo,
-  .galeryThree,
-  .galeryFour {
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    float: none;
-  }
-
-  .logo {
-    font-size: 2.5em;
-    position: fixed;
-    bottom: 0;
-    left: 3vh;
-  }
-
-  .mobileNavbar {
-    width: 100%;
-    height: 12vh;
-    background: rgb(50, 50, 50);
-    position: fixed;
-    top: 0;
-  }
-
-  .listMobile {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 12vh;
-    bottom: 0;
-    font-family: arial;
-    font-weight: bold;
-    background: rgb(0, 0, 0, 0.5);
-    transform: translate(-100vh);
-  }
-
-  .listMobile li {
-    display: block;
-    padding: 5vh 0 5vh 0;
-    font-size: 2em;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    top: 10vh;
-    color: white;
-  }
-
-  .listMobile li:hover {
-    background: black;
-    color: white;
-  }
-
-  .list {
-    transform: translate(-100vh);
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1200px) {
-  .galeryOne,
-  .galeryTwo,
-  .galeryThree,
-  .galeryFour {
-    float: none;
-  }
-
-  .newGaleryOne {
-    float: left;
-    width: 45%;
-    margin-left: 1%;
-  }
-
-  .newGaleryTwo {
-    float: right;
-    width: 48%;
-    margin-right: 2em;
-  }
-
-  .galeryThree {
-    position: relative;
-    margin-left: 2em;
-  }
-  .galeryFour {
-    position: relative;
-    left: 1em;
-  }
-
-  .galery,
-  .galeryTwo,
-  .galeryThree,
-  .galeryFour {
-    float: none;
-    width: auto;
-    margin: auto;
-  }
-}
 
 .aboutContainer {
   display: none;
@@ -317,37 +192,169 @@ img {
   color: white;
 }
 
-@media (max-width: 800px) {
-  .imagesText {
-    width: 100%;
-    float: none;
-  }
-
-  .imagesContent img {
-    width: 100%;
-    float: none;
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .aboutContentText {
-    width: 100%;
-    float: none;
-  }
-
-  .aboutContainer img {
-    width: 100%;
-    height: 35%;
-    float: none;
-  }
-
-  .questionMarkMobile {
-    display: inline;
-    margin-right: 1vh;
-  }
-}
 
 .logoContainer {
   font-style: fantasy;
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .galeryOne,
+  .galeryTwo,
+  .galeryThree,
+  .galeryFour {
+    float: none;
+  }
+
+  .newGaleryOne {
+    float: left;
+    width: 45%;
+    margin-left: 1%;
+  }
+
+  .newGaleryTwo {
+    float: right;
+    width: 48%;
+    margin-right: 2em;
+  }
+
+  .galeryThree {
+    position: relative;
+    margin-left: 2em;
+  }
+  .galeryFour {
+    position: relative;
+    left: 1em;
+  }
+  
+  .galery,
+  .galeryTwo,
+  .galeryThree,
+  .galeryFour {
+    float: none;
+    width: auto;
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .imagesText {
+        width: 100%;
+        float: none;
+      }
+    
+      .imagesContent img {
+        width: 100%;
+        float: none;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+      }
+    
+      .aboutContentText {
+        width: 100%;
+        float: none;
+      }
+      
+      .aboutContainer img {
+        width: 100%;
+        height: 35%;
+        float: none;
+      }
+      
+      .questionMarkMobile {
+        display: inline;
+        margin-right: 1vh;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+  .logoContainer{
+    font-size: 2rem;
+    position: absolute;
+    top: .5rem;
+  } 
+  .mobileNavbarButton {
+    display: inline;
+    font-size: 2rem;
+    display: block;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: white;
+    background: none;
+  }
+  
+  .galeryContainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .galeryContainer span {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .galery,
+  .galeryTwo,
+  .galeryThree,
+  .galeryFour {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    float: none;
+  }
+
+  .logo {
+    font-size: 2.5em;
+    position: fixed;
+    bottom: 0;
+    left: 3vh;
+  }
+
+  .mobileNavbar {
+    width: 100%;
+    height: 12vh;
+    background: rgb(50, 50, 50);
+    position: fixed;
+    top: 0;
+  }
+  
+  .listMobile {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    top: 12vh;
+    bottom: 0;
+    font-family: arial;
+    font-weight: bold;
+    background: rgb(0, 0, 0, 0.5);
+    
+  }
+
+  .listMobile li {
+    display: block;
+    padding: 5vh 0 5vh 0;
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: white;
+  }
+  
+  .listMobile li:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .list {
+    transform: translate(-100vh);
+  }
 }

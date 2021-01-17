@@ -50,7 +50,7 @@ while (iterationNumber <= imageNumber) {
   iterationNumber++;
 }
 
-let listMobile = document.querySelector(".listMobile");
+/* let listMobile = document.querySelector(".listMobile");
 let mobileNavbarButton = document.querySelector(".mobileNavbarButton");
 let booleanValue = false;
 
@@ -68,7 +68,7 @@ mobileNavbarButton.addEventListener("click", function () {
       fill: "forwards",
     });
   }
-});
+}); */
 
 function getScrollPercent() {
   var h = document.documentElement,
@@ -151,3 +151,13 @@ homeMobile.addEventListener("click", function () {
 home.addEventListener("click", function () {
   location.reload();
 });
+
+//mobile slidebar toggle
+
+$(document).ready(function(){
+  $(".mobileNavbarButton").click(function(){
+    $(".listMobile").animate({width:'toggle'},350);
+    console.log("yo!")
+    
+  })
+})

@@ -23,7 +23,7 @@ img {
 .galeryThree,
 .galeryFour {
   float: left;
-  width: 30%;
+  width: 31% !important;
   margin: 1%;
 }
 .galery {
@@ -35,18 +35,18 @@ img {
   float: left;
   width: 30%;
   position: relative;
-  right: -1em;
+  right: -.8em;
 }
 .galeryThree {
   float: right;
   width: 30%;
-  margin: 1em 2em 1em 2%;
+  /* margin: 1em 2em 1em 2%; */
   position: relative;
 }
 .galeryFour {
   float: right;
   width: 30%;
-  margin: 0 2em 1em 2%;
+  /* margin: 0 2em 1em 2%; */
   position: relative;
 }
 
@@ -54,7 +54,7 @@ img {
 .galeryTwo img,
 .galeryThree img,
 .galeryFour img {
-  margin: 0.5em;
+  margin: 0.5em 0;
 }
 
 .navbar {
@@ -67,7 +67,7 @@ img {
 .navbar ul {
   position: absolute;
   top: 1.8rem;
-  right: 1rem;
+  right: 1.5rem;
 
 }
 
@@ -271,15 +271,12 @@ img {
 
   .logoContainer{
     font-size: 2rem;
-    position: absolute;
-    top: .5rem;
   } 
   .mobileNavbarButton {
-    display: inline;
     font-size: 2rem;
     display: block;
     position: fixed;
-    top: 1.5rem;
+    top: 1rem;
     right: 1.5rem;
     color: white;
     background: none;
@@ -318,19 +315,18 @@ img {
 
   .mobileNavbar {
     width: 100%;
-    height: 12vh;
     background: rgb(50, 50, 50);
     position: fixed;
     top: 0;
   }
   
   .listMobile {
-    display: block;
+    display: none;
     width: 100%;
     margin: 0 auto;
     position: fixed;
     left: 0;
-    top: 12vh;
+    top: 60px;
     bottom: 0;
     font-family: arial;
     font-weight: bold;

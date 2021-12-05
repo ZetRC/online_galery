@@ -1,4 +1,4 @@
-console.log("hello");
+/* console.log("hello"); */
 
 let galery = document.querySelector(".galery");
 let galeryTwo = document.querySelector(".galeryTwo");
@@ -38,10 +38,10 @@ let getRandomImage = function (imageID) {
   galeryFour.innerHTML = photosArrayFour.join("");
 };
 
-console.log(photosArray);
+/* console.log(photosArray);
 console.log(photosArrayTwo);
 console.log(photosArrayThree);
-console.log(photosArrayFour);
+console.log(photosArrayFour); */
 
 let iterationNumber = 0;
 let imageNumber = 30;
@@ -108,22 +108,22 @@ setInterval(() => {
   console.log(getScrollPercent());
 }, 500);
 
-let about = document.querySelector(".about");
+/* let about = document.querySelector(".about");
 let aboutContainer = document.querySelector(".aboutContainer");
-let aboutMobile = document.querySelector(".aboutMobile");
+let aboutMobile = document.querySelector(".aboutMobile"); */
 let outIcon = document.querySelector(".outIcon");
 
-outIcon.addEventListener("click", function () {
+/* outIcon.addEventListener("click", function () {
   aboutContainer.style.display = "none";
 });
-
-aboutMobile.addEventListener("click", function () {
+ */
+/* aboutMobile.addEventListener("click", function () {
   aboutContainer.style.display = "block";
 });
 
 about.addEventListener("click", function () {
   aboutContainer.style.display = "block";
-});
+}); */
 
 let photos = document.querySelector(".photos");
 let photosMobile = document.querySelector(".photosMobile");
